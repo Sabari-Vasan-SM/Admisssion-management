@@ -23,7 +23,7 @@ function Dashboard({onBack }) {
               <th>Name</th>
               <th>Aadhar</th>
               <th>EMIS</th>
-              <th>Cutoff percentage</th>
+              <th>Cutoff</th>
               <th>Total Marks</th>
               <th>Date of Birth</th>
               <th>Phone</th>
