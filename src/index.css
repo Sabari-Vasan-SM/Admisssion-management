@@ -1,0 +1,142 @@
+/* Global App Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  text-shadow: 0 0 5px #ffffff;
+  
+  
+}
+
+.App {
+  text-align: center;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://timess3spore.s3.amazonaws.com/ndata/media/Counsellor/CollegeImage/2023/04/23/1682252094.png'); /* Add your image URL here */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+/* Dashboard Styles */
+.dashboard table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Adds space between rows */
+  margin-top: 20px;
+}
+
+.dashboard th, .dashboard td {
+  border: 1px solid transparent; /* Removes borders */
+  padding: 20px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card-like appearance */
+}
+
+th {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+td {
+  background-color: #fff; /* Card background */
+  color: #333;
+}
+
+.dashboard td:hover {
+  background-color: #f0f0f0; /* Hover effect for rows */
+}
+
+/* Rounded Back Button */
+.back-btn {
+  padding: 12px 30px;
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #ff8c00;
+  transform: scale(1.07);
+}
+
+/* Home Page Styles */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttons button {
+  margin: 0 20px;
+  padding: 18px 50px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.15); /* More pronounced zoom effect */
+  background-color: #2563eb;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Photo Preview */
+.photo-preview {
+  display: block;
+  margin-top: 15px;
+  max-width: 120px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-out;
+}
